@@ -6,6 +6,10 @@
         + Renturn function :
             - no parameter
             - has parameter
+    * return func has param can calculate: return func no param with return func no param
+                                         : return func has param with return func no param
+                                         : return func has param with return func has param
+        
 -->
 <?php
 
@@ -34,5 +38,16 @@
         return 10+10;
     }
     echo '<h1 style="color:gray">10 + 10 = '.sum().'</h1>'; // return func យើងត្រូវប្រើ​ echo ទើបហៅវាបាន
+
+    // return func has parameter
+    function dev($num1,$num2){
+        return $num1 / $num2;
+    }
+    echo '<h1>Num1 / Num2 = '.dev(10,5).'</h1>';
+
+    function sumOfFunc( $num_1, $num_2 ){
+        return $num_1 + $num_2;
+    }
+    echo '<h1 style="color:yellow">sum() + dev() = '.sumOfFunc(sum(),dev(10,5)).'</h1>';
 
 ?>
