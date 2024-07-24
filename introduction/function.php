@@ -28,4 +28,11 @@
         }
     }
     login('somonorhong@gmail.com',31012006);
+
+    // return func no parameter
+    function sum(){
+        return 10+10;
+    }
+    echo '<h1 style="color:gray">10 + 10 = '.sum().'</h1>'; // return func យើងត្រូវប្រើ​ echo ទើបហៅវាបាន
+
 ?>
